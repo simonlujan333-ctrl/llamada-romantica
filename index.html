@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Una invitación especial 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 380px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      animation: fadeIn 1.5s ease;
+    }
+
+    h1 {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 1.5;
+    }
+
+    .time {
+      margin-top: 15px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+      background: #fff;
+      color: #ff5f8a;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      background: #ffe4ec;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Hola 💕</h1>
+    <p>
+      Quería invitarte a algo especial.<br><br>
+      ¿Te gustaría que hoy tengamos una llamada?
+      Me encantaría escucharte y compartir un momento contigo ✨
+    </p>
+
+    <div class="time">
+      📞 Hoy a las 12:15 pm
+    </div>
+
+    <button onclick="alert('💖 Me haría muy feliz hablar contigo 💖')">
+      ¿Aceptas? 💌
+    </button>
+  </div>
+
+</body>
+</html>
